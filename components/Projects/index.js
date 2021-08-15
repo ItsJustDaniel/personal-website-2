@@ -31,7 +31,7 @@ const Projects = () => {
                   </div>{" "}
                   <div className={styles.project__content}>
                     <Image
-                      src="/Code-Clothing().PNG"
+                      src="/images/projects/Code-Clothing().PNG"
                       alt="placeholder for image"
                       width="300"
                       height="100"
@@ -78,7 +78,7 @@ const Projects = () => {
                         </h3>
                       </div>
                       <Image
-                        src="/Covid Information.PNG"
+                        src="/images/projects/Covid Information.PNG"
                         width="300"
                         height="100"
                         alt="placeholder for image"
@@ -117,7 +117,7 @@ const Projects = () => {
 
                   <div className={styles.project__content}>
                     <Image
-                      src="/jeopardy.PNG"
+                      src="/images/projects/jeopardy.PNG"
                       width="300"
                       height="100"
                       alt="image for jeopardy site"
