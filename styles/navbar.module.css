@@ -1,0 +1,31 @@
+.nav {
+  background-color: #252d3e;
+  padding: 1rem;
+}
+
+.nav__content {
+  width: 90%;
+  min-width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__title {
+  margin: 0;
+  font-size: clamp(1rem, 6vw, 2.5rem);
+}
+.nav__links {
+  display: flex;
+}
+.nav__link {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  margin-left: 1rem;
+}
+
+.nav__clicked,
+.nav__link:hover {
+  color: #f45b69;
+}

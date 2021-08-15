@@ -1,0 +1,25 @@
+.contact__container {
+  margin: 3rem 0;
+}
+
+.contact__title {
+  text-align: center;
+  font-size: clamp(1rem, 6vw, 3rem);
+  margin: 2rem 0;
+}
+
+.contacts {
+  width: clamp(300px, 80vw, 700px);
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social {
+  font-size: clamp(4rem, 7vw, 7rem);
+  cursor: pointer;
+}
+
+.social:hover {
+  color: #f45b69;
+}

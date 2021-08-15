@@ -1,0 +1,75 @@
+.hero__container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__card {
+  background-color: #252d3e;
+  padding: clamp(1rem, 6vw, 3rem);
+  display: flex;
+  flex-direction: row;
+  width: clamp(250px, 80vw, 500px);
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profile {
+  margin: 1rem;
+}
+
+.hero__card__desc {
+  padding: 0 2rem;
+}
+.hero__card__name {
+  font-size: clamp(1.2rem, 5vw, 3rem);
+  text-align: center;
+}
+
+.hero__card__job {
+  font-size: clamp(0.8rem, 3vw, 1.5rem);
+  text-align: center;
+}
+
+.hero__animate {
+  animation: fadeIn linear 1s;
+  -webkit-animation: fadeIn linear 1s;
+  -moz-animation: fadeIn linear 1s;
+  -o-animation: fadeIn linear 1s;
+  -ms-animation: fadeIn linear 1s;
+}
+
+/* animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

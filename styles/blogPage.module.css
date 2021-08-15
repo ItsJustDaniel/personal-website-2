@@ -1,0 +1,16 @@
+.card {
+  width: clamp(250px, 80vw, 800px);
+  background-color: #252d3e;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.back {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.back:hover {
+  color: #f45b69;
+}
