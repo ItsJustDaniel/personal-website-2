@@ -15,11 +15,7 @@ const Projects = () => {
           {({ ref, inView }) => {
             console.log(inView);
             return (
-              <a
-                href="https://code-clothing.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://code-clothing.netlify.app/" target="_blank">
                 <div
                   className={`${styles.project__card} ${
                     inView && styles.project__animate
@@ -32,9 +28,9 @@ const Projects = () => {
                   <div className={styles.project__content}>
                     <Image
                       src="/images/projects/Code-Clothing().png"
-                      width={250}
-                      height={100}
                       alt="placeholder for image"
+                      width="300"
+                      height="100"
                       className={styles.image}
                     />
                     <div className={styles.project__info}>
@@ -56,7 +52,6 @@ const Projects = () => {
             return (
               <a
                 href=" https://itsjustdaniel.github.io/Covipedia/"
-                rel="noreferrer"
                 target="_blank"
               >
                 <div className={styles.right} ref={ref}>
@@ -79,8 +74,8 @@ const Projects = () => {
                       </div>
                       <Image
                         src="/images/projects/Covid Information.png"
-                        width={250}
-                        height={100}
+                        width="300"
+                        height="100"
                         alt="placeholder for image"
                         className={styles.image}
                       />
@@ -103,7 +98,6 @@ const Projects = () => {
               <a
                 href="https://itsjustdaniel.github.io/jeopardy/"
                 target="_blank"
-                rel="noreferrer"
               >
                 <div
                   className={`${styles.project__card} ${
@@ -118,8 +112,8 @@ const Projects = () => {
                   <div className={styles.project__content}>
                     <Image
                       src="/images/projects/jeopardy.png"
-                      width={250}
-                      height={100}
+                      width="300"
+                      height="100"
                       alt="image for jeopardy site"
                       className={styles.image}
                     />

@@ -16,7 +16,7 @@
   background-color: #252d3e;
   width: clamp(270px, 80%, 600px);
   padding: clamp(1rem, 4vw, 2rem);
-  margin: clamp(1rem, 4vw, 2rem) 0;
+  margin: clamp(1rem, 4vw, 2rem);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -36,6 +36,11 @@
   transition: 0.5s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
+}
+
+.image__container {
+  width: clamp(300px, 50%, 400px);
+  height: 100%;
 }
 
 .play,
@@ -97,12 +102,12 @@
 }
 
 .project__name {
-  font-size: clamp(0.8rem, 3vw, 2rem);
+  font-size: clamp(0.9rem, 1.8vw, 2rem);
   margin-top: 0;
 }
 
 .project__desc {
-  font-size: clamp(0.4rem, 3vw, 1.2rem);
+  font-size: clamp(0.56rem, 1.5vw, 1.2rem);
 }
 
 .project__animate {
