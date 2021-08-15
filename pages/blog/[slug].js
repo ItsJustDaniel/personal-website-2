@@ -15,7 +15,7 @@ const BlogPage = ({
 }) => {
   return (
     <div className={styles.card}>
-      <Link href="/blog">
+      <Link href="/blog" passHref>
         <FontAwesomeIcon icon={faLongArrowAltLeft} className={styles.back} />
       </Link>
       <div>

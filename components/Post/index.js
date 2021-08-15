@@ -4,13 +4,14 @@ import styles from "/styles/blogList.module.css";
 
 export default function Post({ post }) {
   return (
-    <Link href={`/blog/${post.slug}`}>
+    <Link href={`/blog/${post.slug}`} passHref>
       <div className={styles.card}>
         <Image
           src={post.frontmatter.cover_image}
           className={styles.cover__image}
           height={400}
           width={600}
+          alt="cover image"
         />
 
         <div className={styles.details}>

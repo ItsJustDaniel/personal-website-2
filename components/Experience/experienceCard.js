@@ -11,7 +11,7 @@ const ExperienceCard = ({ inView, time, children }) => {
     } else {
       setLoading(false);
     }
-  }, [inView]);
+  }, [inView, time]);
   return (
     <div
       className={

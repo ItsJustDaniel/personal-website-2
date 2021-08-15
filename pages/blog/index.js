@@ -15,7 +15,7 @@ const Blog = ({ posts }) => {
       </Head>
       <div className={styles.posts}>
         {posts.map((post, index) => {
-          return <Post post={post} />;
+          return <Post post={post} key={index} />;
         })}
       </div>
     </div>

@@ -15,7 +15,11 @@ const Projects = () => {
           {({ ref, inView }) => {
             console.log(inView);
             return (
-              <a href="https://code-clothing.netlify.app/" target="_blank">
+              <a
+                href="https://code-clothing.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div
                   className={`${styles.project__card} ${
                     inView && styles.project__animate
@@ -52,6 +56,7 @@ const Projects = () => {
             return (
               <a
                 href=" https://itsjustdaniel.github.io/Covipedia/"
+                rel="noreferrer"
                 target="_blank"
               >
                 <div className={styles.right} ref={ref}>
@@ -98,6 +103,7 @@ const Projects = () => {
               <a
                 href="https://itsjustdaniel.github.io/jeopardy/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <div
                   className={`${styles.project__card} ${
