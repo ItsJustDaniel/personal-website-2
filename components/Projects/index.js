@@ -3,6 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { InView } from "react-intersection-observer";
 import styles from "/styles/project.module.css";
+import codeClothing from "/public/images/projects/Code-Clothing().PNG";
+import CovidApp from "/public/images/projects/Covid Information.png";
+import Jeopardy from "/public/images/projects/jeopardy.png";
 
 const Projects = () => {
   return (
@@ -31,7 +34,7 @@ const Projects = () => {
                   </div>{" "}
                   <div className={styles.project__content}>
                     <Image
-                      src="/images/projects/Code-Clothing().png"
+                      src={codeClothing}
                       alt="placeholder for image"
                       width="300"
                       height="100"
@@ -78,7 +81,7 @@ const Projects = () => {
                         </h3>
                       </div>
                       <Image
-                        src="/images/projects/Covid Information.png"
+                        src={CovidApp}
                         width="300"
                         height="100"
                         alt="placeholder for image"
@@ -117,7 +120,7 @@ const Projects = () => {
 
                   <div className={styles.project__content}>
                     <Image
-                      src="/images/projects/jeopardy.png"
+                      src={Jeopardy}
                       width="300"
                       height="100"
                       alt="image for jeopardy site"
