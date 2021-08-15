@@ -26,7 +26,7 @@ const Skills = () => {
                 <SkillCard skill="Gatsby" inView={inView} />{" "}
               </div>
               <div className={styles.row}>
-                <SkillCard skill="HTML" inView={inView} />{" "}
+                <SkillCard skill="Node.js" inView={inView} />{" "}
                 <SkillCard skill="Express" inView={inView} />
               </div>
             </div>
