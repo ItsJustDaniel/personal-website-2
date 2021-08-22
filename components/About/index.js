@@ -28,13 +28,13 @@ const About = () => {
                 <p>
                   I enjoy learning about new things, particularly new tool in
                   the industry. I make sure to keep up to date with the industry
-                  and i try to understand the behind-the-scenes of a language or
+                  and I try to understand the behind-the-scenes of a language or
                   a framework, I believe that knowing how something works help
                   to improve your skill in solving problems in it.
                 </p>
                 <p>
-                  I have a blog that i plan to help teach others and document my
-                  experiences and opinions within the tech industry.
+                  I have a blog that I plan to help teach others and document my
+                  experiences within the tech industry.
                 </p>
               </div>
             </div>

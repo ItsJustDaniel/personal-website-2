@@ -73,7 +73,7 @@ const Projects = () => {
                           Covid Information
                         </h1>
                         <h3 className={styles.project__desc}>
-                          A website originally submitted for a hackathon, i plan
+                          A website originally submitted for a hackathon, I plan
                           to make this into the real thing
                         </h3>
                       </div>
@@ -126,7 +126,7 @@ const Projects = () => {
                     <div className={styles.project__info}>
                       <h1 className={styles.project__name}>Jeopardy</h1>
                       <h3 className={styles.project__desc}>
-                        a app submitted for the hackalphaX hackathon (which i
+                        a app submitted for the hackalphaX hackathon (which I
                         won). emulates the game show "Jeopardy"
                       </h3>
                     </div>
