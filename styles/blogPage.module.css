@@ -1,8 +1,8 @@
 .card {
-  width: clamp(250px, 80vw, 800px);
+  width: clamp(300px, 80vw, 1200px);
   background-color: #252d3e;
-  margin: 2rem auto;
-  padding: 2rem;
+  margin: 5rem auto;
+  padding: 3rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -13,4 +13,23 @@
 }
 .back:hover {
   color: #f45b69;
+}
+
+.text {
+  font-size: 1.2rem;
+}
+
+.image__container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 5rem 0;
+}
+
+.image {
+  margin: auto;
+}
+.card a {
+  text-decoration: underline;
+  font-weight: bold;
 }

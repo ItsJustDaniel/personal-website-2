@@ -10,12 +10,17 @@ import Skills from "../components/Skills";
 export default function Home() {
   return (
     <div>
-      <Hero />
-      <About />
-      <Projects />
-      <Skills />
-      <Experience />
-      <Contact />
+      <Head>
+        <title>Daniel Li || Home</title>
+      </Head>
+      <div>
+        <Hero />
+        <About />
+        <Projects />
+        <Skills />
+        <Experience />
+        <Contact />
+      </div>
     </div>
   );
 }

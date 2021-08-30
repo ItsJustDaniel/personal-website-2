@@ -1,5 +1,5 @@
 ---
-title: "All The Resources You Could Possibly Need As A Beggineer Web Developer"
+title: "All The Resources You Could Possibly Need As A Beginner Web Developer"
 date: "August 23 2021"
 cover_image: /images/posts/resources.png
 ---
@@ -24,27 +24,31 @@ Basic backend knowledge - https://developer.mozilla.org/en-US/docs/Learn/Server-
 
 ## CSS
 
-#### Flex/Grid
+### Flex/Grid
 
 to learn:
+
 https://flexboxfroggy.com/
+
 https://cssgridgarden.com/s
 
 to refer to:
+
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
 https://css-tricks.com/snippets/css/complete-guide-grid/
 
-#### Responsiveness
+### Responsiveness
 
 https://courses.kevinpowell.co/conquering-responsive-layouts
 
-#### Design
+### Design
 
 though we may not be web designers, every web developer should at least know the fundamentals of web design.
 
 https://scrimba.com/g/gdesign - teaches the fundalmental of design
 
-#### Practice
+### Practice
 
 perhaps the most important. you can practice however way you want, but these are some ways you could do it.
 
@@ -52,7 +56,7 @@ https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-p
 
 https://www.frontendpractice.com/ - try and recreate the sites shown here
 
-#### Youtubers/content creators
+### Youtubers/content creators
 
 Youtubers are great because they will always do videos on the recent stuff like what is being added/updated with the language they are using, also their consistency of their content is quite good.
 
@@ -73,7 +77,7 @@ https://www.youtube.com/channel/UCBGr3ZMcV5jke40_Wrv3fNA
 
 ## JS
 
-#### Function Programming
+### Function Programming
 
 Learn the functional paradigm and all its features
 https://www.youtube.com/watch?v=BMUiFMZr7vk&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84 – it’s a little old, even for when I was learning it but, mpj is such a good teacher that I couldn’t resist.
@@ -89,7 +93,7 @@ https://www.codewars.com/
 https://leetcode.com/
 https://www.codingame.com/start
 
-#### Advanced
+### Advanced
 
 https://www.youtube.com/watch?v=Bv_5Zv5c-Ts&t=3642s – goes in-depth into javascript and how its made, and what happens behind the scenes
 you might want to consider buying the Udemy course after watching the video.
@@ -101,16 +105,16 @@ React
 https://reactjs.org/docs/getting-started.html - docs
 I have a react/redux course that I am not really doing. I can give it to you for free if you want, But any react tutorial should be good enough.
 
-#### Practice
+### Practice
 
 https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/ - assignments from freecodecamp
 
-##### Advanced React
+#### Advanced React
 
 React hooks and Context – just search up
 https://overreacted.io/ - Dan Abramov is one of the engineers who made React, he has been generous enough to uncover its secrets, best practices, he also does general blogs on all things coding.
 
-##### Good Dan Blogs
+#### Good Dan Blogs
 
 https://overreacted.io/a-complete-guide-to-useeffect/
 https://overreacted.io/react-as-a-ui-runtime/

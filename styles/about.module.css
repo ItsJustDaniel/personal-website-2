@@ -48,3 +48,12 @@
     transform: scale(100%);
   }
 }
+
+@media (prefers-reduced-motions) {
+  .about__animate {
+    animation: dissolve;
+    animation-name: dissolve;
+    -moz-animation: dissolve;
+    -webkit-animation: dissolve;
+  }
+}

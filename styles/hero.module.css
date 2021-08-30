@@ -73,3 +73,12 @@
     transform: translateX(0);
   }
 }
+
+@media (prefers-reduced-motions) {
+  .hero__animate {
+    animation: dissolve;
+    animation-name: dissolve;
+    -moz-animation: dissolve;
+    -webkit-animation: dissolve;
+  }
+}

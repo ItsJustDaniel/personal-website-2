@@ -76,3 +76,19 @@
     opacity: 1;
   }
 }
+
+@media (prefers-reduced-motions) {
+  .project__animate {
+    animation: dissolve;
+    animation-name: dissolve;
+    -moz-animation: dissolve;
+    -webkit-animation: dissolve;
+  }
+
+  .project__right__animate {
+    animation: dissolve;
+    animation-name: dissolve;
+    -moz-animation: dissolve;
+    -webkit-animation: dissolve;
+  }
+}

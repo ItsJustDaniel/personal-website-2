@@ -83,3 +83,12 @@
     margin: 1rem 0;
   }
 }
+
+@media (prefers-reduced-motions) {
+  .animate {
+    animation: dissolve;
+    -moz-animation: dissolve;
+    -webkit-animation: dissolve;
+    opacity: 0;
+  }
+}

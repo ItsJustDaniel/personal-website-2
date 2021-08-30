@@ -7,6 +7,7 @@ import styles from "/styles/blogPage.module.css";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowAltLeft } from "@fortawesome/free-solid-svg-icons";
+import Head from "next/head";
 
 const BlogPage = ({
   frontmatter: { title, date, cover_image },
@@ -14,17 +15,36 @@ const BlogPage = ({
   content,
 }) => {
   return (
-    <div className={styles.card}>
-      <Link href="/blog" passHref>
-        <FontAwesomeIcon icon={faLongArrowAltLeft} className={styles.back} />
-      </Link>
-      <div>
-        <h1 className={styles.title}>{title}</h1>
-
-        <h6>{date}</h6>
-        <Image src={cover_image} alt="" width={800} height={600} />
+    <div>
+      <Head>
+        <title>Daniel Li || {title}</title>
+        <meta property="og:title" content={title} key="title" />
+        <meta property="og:description" content="Lorem Ipsum" />
+        <meta property="og:image" content={cover_image} />
+      </Head>
+      <div className={styles.card}>
+        <Link href="/blog" passHref>
+          <FontAwesomeIcon icon={faLongArrowAltLeft} className={styles.back} />
+        </Link>
         <div>
-          <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+          <h1 className={styles.title}>{title}</h1>
+
+          <h6>{date}</h6>
+          <div className={styles.image__container}>
+            <Image
+              src={cover_image}
+              alt=""
+              width={700}
+              height={500}
+              class={styles.image}
+            />
+          </div>
+          <div>
+            <div
+              dangerouslySetInnerHTML={{ __html: marked(content) }}
+              className={styles.text}
+            ></div>
+          </div>
         </div>
       </div>
     </div>
