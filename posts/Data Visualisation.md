@@ -1,7 +1,7 @@
 ---
 title: "Data Visualisation"
 date: "September 06 2021"
-cover_image: /images/posts/first blog.jpg
+cover_image: /images/posts/data.png
 ---
 
 We live in the age of data. According to Forbes, 90% of the world's data was generated in the last two years. now this is questionable because it's been repeated by articles for quite a few years now, but that aside, we are overwhelmed with data and it can be hard to comprehend the amount of information that we're receiving, that's where data visualisation comes in. data visualisation allows us to see and comprehend data. it allows us to see the stories that can be told through data.
