@@ -17,7 +17,7 @@ const BlogPage = ({
   return (
     <div>
       <Head>
-        <title>Daniel Li || {title}</title>
+        <title>{title}</title>
         <meta property="og:title" content={title} key="title" />
         <meta property="og:description" content="Lorem Ipsum" />
         <meta property="og:image" content={cover_image} />
