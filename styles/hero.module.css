@@ -17,6 +17,7 @@
 
 .profile {
   margin: 1rem;
+  border-radius: 50%;
 }
 
 .hero__card__desc {

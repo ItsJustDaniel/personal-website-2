@@ -15,7 +15,7 @@ const Hero = () => {
               }`}
             >
               <Image
-                src="/images/profile.svg"
+                src="/images/me.jpg"
                 width={130}
                 height={77}
                 alt="placeholder for profile pic"

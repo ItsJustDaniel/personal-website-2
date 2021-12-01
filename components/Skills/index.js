@@ -28,6 +28,7 @@ const Skills = () => {
               <div className={styles.row}>
                 <SkillCard skill="Node.js" inView={inView} />{" "}
                 <SkillCard skill="Express" inView={inView} />
+                <SkillCard skill="D3.js" inView={inView} />
               </div>
             </div>
           );

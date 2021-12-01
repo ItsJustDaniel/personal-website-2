@@ -14,10 +14,9 @@ const Experience = () => {
                 <h1 className={styles.title}>Remote Work/freelance</h1>
                 <h3 className={styles.desc}>
                   I've done a remote job, it was with other developers across
-                  the world and it was under the Agile methodlogy. i ended up
-                  quiting that because i didn't get paid, but it taught me how
-                  to work with other people and how things are normally done in
-                  corporate jobs
+                  the world and it was under the Agile methodlogy. It taught me
+                  how to work with other people and how things are normally done
+                  in corporate jobs
                 </h3>
               </ExperienceCard>
               <ExperienceCard inView={inView} time="300">
@@ -33,10 +32,10 @@ const Experience = () => {
               <ExperienceCard inView={inView} time="500">
                 <h1 className={styles.title}>Mcdonalds Crewmate</h1>
                 <h3 className={styles.desc}>
-                  I currently work as Mcdonalds Crewmate as a casual worker. i
-                  work with a crew in a fastpaced environment. it teached me how
-                  to work deal with stress and how to communicate properly with
-                  my fellow crewmates.
+                  I currently work as a Mcdonalds Crewmate as a casual worker. i
+                  work with a crew in a fastpaced environment. it teaches me how
+                  to work dealing with stress and how to communicate properly
+                  with my fellow crewmates.
                 </h3>
               </ExperienceCard>
             </div>

@@ -26,11 +26,12 @@ const About = () => {
                   responsive.
                 </p>
                 <p>
-                  I enjoy learning about new things, particularly new tool in
-                  the industry. I make sure to keep up to date with the industry
-                  and I try to understand the behind-the-scenes of a language or
-                  a framework, I believe that knowing how something works help
-                  to improve your skill in solving problems in it.
+                  I've always enjoyed learning about new things, particularly
+                  new tools in the industry. I make sure to keep up to date with
+                  the industry and I try to understand the behind-the-scenes of
+                  a language or a framework, I believe that knowing how
+                  something works help to improve your skill in solving problems
+                  in it.
                 </p>
                 <p>
                   I have a blog that I plan to help teach others and document my

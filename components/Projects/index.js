@@ -55,7 +55,7 @@ const Projects = () => {
           {({ ref, inView }) => {
             return (
               <a
-                href=" https://itsjustdaniel.github.io/Covipedia/"
+                href="https://covid-information-app.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
