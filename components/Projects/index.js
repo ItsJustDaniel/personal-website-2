@@ -73,8 +73,9 @@ const Projects = () => {
                           Covid Information
                         </h1>
                         <h3 className={styles.project__desc}>
-                          A website originally submitted for a hackathon, I plan
-                          to make this into the real thing
+                          A website that details basic information about
+                          covid-19. contains data visualisations built with
+                          d3.js
                         </h3>
                       </div>
                       <Image
