@@ -21,7 +21,7 @@ export default function Home() {
           property="og:description"
           content="My personal website that showcases my projects"
         />
-        <meta property="og:image" content="../images/me.jpg" />
+        <meta property="og:image" content="/images/me.jpg" />
       </Head>
       <div>
         <Hero />
