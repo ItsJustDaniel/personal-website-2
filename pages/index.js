@@ -12,6 +12,20 @@ export default function Home() {
     <div>
       <Head>
         <title>Daniel Li || Home</title>
+
+        <meta property="og:url" content="https://lidaniel.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="fb:app_id" content="your fb app id" />
+        <meta property="og:title" content="Daniel Li's Personal Website" />
+        <meta
+          name="twitter:card"
+          content="My personal website that showcases my projects"
+        />
+        <meta
+          property="og:description"
+          content="My personal website that showcases my projects"
+        />
+        <meta property="og:image" content="../images/me.jpg" />
       </Head>
       <div>
         <Hero />
