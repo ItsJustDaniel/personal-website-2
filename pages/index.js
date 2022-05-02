@@ -15,12 +15,8 @@ export default function Home() {
 
         <meta property="og:url" content="https://lidaniel.vercel.app/" />
         <meta property="og:type" content="website" />
-        <meta property="fb:app_id" content="your fb app id" />
         <meta property="og:title" content="Daniel Li's Personal Website" />
-        <meta
-          name="twitter:card"
-          content="My personal website that showcases my projects"
-        />
+        <meta name="twitter:card" content="summary" />
         <meta
           property="og:description"
           content="My personal website that showcases my projects"
