@@ -12,6 +12,10 @@ export default function Home() {
     <div>
       <Head>
         <title>Daniel Li || Home</title>
+        <link
+          rel="icon"
+          href="https://lidaniel.vercel.app/images/logo.jpg"
+        ></link>
 
         <meta property="og:url" content="https://lidaniel.vercel.app/" />
         <meta property="og:type" content="website" />
@@ -21,7 +25,10 @@ export default function Home() {
           property="og:description"
           content="My personal website that showcases my projects"
         />
-        <meta property="og:image" content="/images/me.jpg" />
+        <meta
+          property="og:image"
+          content="https://lidaniel.vercel.app/images/logo.jpg"
+        />
       </Head>
       <div>
         <Hero />
