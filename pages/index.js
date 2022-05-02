@@ -27,7 +27,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://lidaniel.vercel.app/images/logo.jpg"
+          content="https://lidaniel.vercel.app/images/personal-site.png"
         />
       </Head>
       <div>
