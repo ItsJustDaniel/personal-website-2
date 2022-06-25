@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className={styles.nav__content}>
         <h1 className={styles.nav__title}>Daniel Li</h1>
         <div className={styles.nav__links}>
-          {/* <Link href="/">
+          <Link href="/">
             <a
               className={`${styles.nav__link}  ${
                 router.pathname === "/" && styles.nav__clicked
@@ -25,7 +25,7 @@ const Navbar = () => {
             >
               Blog
             </a>
-          </Link> */}
+          </Link>
         </div>
       </div>
     </nav>

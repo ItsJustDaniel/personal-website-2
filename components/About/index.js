@@ -18,24 +18,19 @@ const About = () => {
             >
               <div className={styles.about__info}>
                 <p>
-                  Hi, i'm a self-taught frontend web developer located in
-                  Australia and I've been programming since 2019. i believe in
-                  to not only do something, but to do it right. I like to spend
-                  the extra effort to make sure the code is clean and
-                  well-structured and that the website is high-performing and
-                  responsive.
+                  Hi, my name is Daniel Li and i'm self-taught web developer.
+                  I'm most focused on frontend, but i know some backend as well
+                  such as node, express and mongodb. On the frontend, i know
+                  HTML, CSS, JavaScript, React and Next.
                 </p>
                 <p>
-                  I've always enjoyed learning about new things, particularly
-                  new tools in the industry. I make sure to keep up to date with
-                  the industry and I try to understand the behind-the-scenes of
-                  a language or a framework, I believe that knowing how
-                  something works help to improve your skill in solving problems
-                  in it.
-                </p>
-                <p>
-                  I have a blog that I plan to help teach others and document my
-                  experiences within the tech industry.
+                  I've been programming since 2019, but really it started even
+                  before that, when i was child playing Warcraft 3. i loved
+                  playing around in the map editor and experimenting with the
+                  triggers (a GUI language they had inside). this appears to
+                  this day as i love experimenting with the intricacies of
+                  languages and frameworks and i'm very passionate and curious
+                  about learning new technologies
                 </p>
               </div>
             </div>

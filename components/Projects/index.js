@@ -16,7 +16,7 @@ const Projects = () => {
             console.log(inView);
             return (
               <a
-                href="https://code-clothing.netlify.app/"
+                href="https://code-clothes.com/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -40,8 +40,8 @@ const Projects = () => {
                     <div className={styles.project__info}>
                       <h1 className={styles.project__name}>Code-Clothing()</h1>
                       <h3 className={styles.project__desc}>
-                        E-commerce site that sells programming clothes. still
-                        wip, but the frontend (and backend) is done
+                        Functional e-commerce site that sells programming
+                        clothes. Uses stripe payment system
                       </h3>
                     </div>
                   </div>

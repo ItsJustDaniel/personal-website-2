@@ -28,6 +28,13 @@ const Experience = () => {
                   people, learn technologies you know nothing about very quickly
                   and how to work under strict deadlines.
                 </h3>
+                <a
+                  href="https://www.youtube.com/watch?v=mMBV-61whqY"
+                  target="blank"
+                  className={styles.hackLink}
+                >
+                  link
+                </a>
               </ExperienceCard>
               <ExperienceCard inView={inView} time="500">
                 <h1 className={styles.title}>Mcdonalds Crewmate</h1>
