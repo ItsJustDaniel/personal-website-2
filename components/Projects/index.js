@@ -118,7 +118,7 @@ const Projects = () => {
 
                   <div className={styles.project__content}>
                     <Image
-                      src="/images/projects/interactive-comment-section.PNG"
+                      src="/images/projects/interactive-comment-section.png"
                       width="300"
                       height="100"
                       alt="image for jeopardy site"
