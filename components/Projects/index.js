@@ -102,7 +102,7 @@ const Projects = () => {
             console.log(inView);
             return (
               <a
-                href="https://itsjustdaniel.github.io/jeopardy/"
+                href="https://itsjustdaniel.github.io/interactive-comment-section/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -118,17 +118,19 @@ const Projects = () => {
 
                   <div className={styles.project__content}>
                     <Image
-                      src="/images/projects/jeopardy.PNG"
+                      src="/images/projects/interactive-comment-section.PNG"
                       width="300"
                       height="100"
                       alt="image for jeopardy site"
                       className={styles.image}
                     />
                     <div className={styles.project__info}>
-                      <h1 className={styles.project__name}>Jeopardy</h1>
+                      <h1 className={styles.project__name}>
+                        Interactive Comment Section
+                      </h1>
                       <h3 className={styles.project__desc}>
-                        a app submitted for the hackalphaX hackathon (which I
-                        won). emulates the game show "Jeopardy"
+                        Interactive comment section. challenge by frontend
+                        mentors
                       </h3>
                     </div>
                   </div>
