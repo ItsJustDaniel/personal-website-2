@@ -6,8 +6,9 @@ import Experience from "../components/Experience";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
+import cmsAPI from "../constants";
 
-export default function Home() {
+export default function Home({ projectsData }) {
   return (
     <div>
       <Head>
@@ -30,10 +31,36 @@ export default function Home() {
       <div>
         <Hero />
         <About />
-        <Projects />
+        <Projects projects={projectsData} />
         <Skills />
         <Contact />
       </div>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const res = await fetch(`${cmsAPI}wp-json/wp/v2/project`);
+  let projectsData = await res.json();
+
+  if (!projectsData) {
+    return {
+      notFound: true,
+    };
+  }
+
+  for (let i = 0; i < projectsData.length; i++) {
+    const mediaRes = await fetch(
+      `${cmsAPI}wp-json/wp/v2/media/${projectsData[i].acf.thumbnail_image}`
+    );
+    const projectMedia = await mediaRes.json();
+    projectsData[i].acf.imageUrl =
+      projectMedia.media_details.sizes.full.source_url;
+  }
+  return {
+    props: {
+      projectsData,
+    },
+    revalidate: 86400,
+  };
 }

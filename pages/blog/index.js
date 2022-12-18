@@ -1,10 +1,10 @@
-import fs from "fs";
 import matter from "gray-matter";
 import Head from "next/head";
 import path from "path";
 import styles from "/styles/blogList.module.css";
 import Post from "../../components/Post";
 import { sortByDate } from "/utils";
+import cmsAPI from "../../constants";
 
 const Blog = ({ posts }) => {
   console.log(posts);
@@ -23,33 +23,33 @@ const Blog = ({ posts }) => {
 };
 
 export async function getStaticProps() {
-  //get files from the posts dir
-  const files = fs.readdirSync(path.join("posts"));
+  const res = await fetch(`${cmsAPI}wp-json/wp/v2/posts`);
+  const posts = await res.json();
+  let thumbnails = [];
 
-  // Get slug and frontmatter from posts
-  const posts = files.map((filename) => {
-    // Create slug
-    const slug = filename.replace(".md", "");
-
-    // get frontmatter
-    const markdownWithMeta = fs.readFileSync(
-      path.join("posts", filename),
-      "utf-8"
-    );
-
-    const { data: frontmatter } = matter(markdownWithMeta);
-
+  if (!posts) {
     return {
-      slug,
-      frontmatter,
+      notFound: true,
     };
-  });
-  console.log(posts);
+  }
+
+  for (let i = 0; i < posts.length; i++) {
+    posts[i].acf.thumbnail;
+    console.log(posts[i].acf.thumbnail);
+    const res = await fetch(
+      `${cmsAPI}wp-json/wp/v2/media/${posts[i].acf.thumbnail}`
+    );
+    const data = await res.json();
+    console.log(data);
+    posts[i].acf.imageUrl = data.media_details.sizes.full.source_url;
+  }
 
   return {
     props: {
-      posts: posts.sort(sortByDate),
+      posts,
+      thumbnails,
     },
+    revalidate: 86400,
   };
 }
 

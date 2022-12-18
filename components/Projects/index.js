@@ -3,8 +3,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { InView } from "react-intersection-observer";
 import styles from "/styles/project.module.css";
+import { useState } from "react";
 
-const Projects = () => {
+const Projects = (projects) => {
+  const [sortedProjects] = useState(
+    projects.projects.sort((a, b) => {
+      if (a.acf.piority > b.acf.piority) {
+        return 1;
+      } else if (a.acf.piority < b.acf.piority) {
+        return -1;
+      }
+      return 0;
+    })
+  );
+
+  console.log(sortedProjects);
   return (
     <div className={styles.projects__container}>
       <h1 className={styles.projects__title}>Projects</h1>
@@ -16,7 +29,7 @@ const Projects = () => {
             console.log(inView);
             return (
               <a
-                href="https://code-clothes.com/"
+                href={sortedProjects[0].acf.project_link.url}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -31,17 +44,18 @@ const Projects = () => {
                   </div>{" "}
                   <div className={styles.project__content}>
                     <Image
-                      src="/images/projects/Code-Clothing().PNG"
+                      src={sortedProjects[0].acf.imageUrl}
                       alt="placeholder for image"
                       width="300"
                       height="100"
                       className={styles.image}
                     />
                     <div className={styles.project__info}>
-                      <h1 className={styles.project__name}>Code-Clothing()</h1>
+                      <h1 className={styles.project__name}>
+                        {sortedProjects[0].title.rendered}
+                      </h1>
                       <h3 className={styles.project__desc}>
-                        Functional e-commerce site that sells programming
-                        clothes. Uses stripe payment system
+                        {sortedProjects[0].acf.excerpt}
                       </h3>
                     </div>
                   </div>
@@ -55,7 +69,7 @@ const Projects = () => {
           {({ ref, inView }) => {
             return (
               <a
-                href="https://covid-information-app.vercel.app/"
+                href={sortedProjects[1].acf.project_link.url}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -70,16 +84,14 @@ const Projects = () => {
                     >
                       <div className={styles.project__info}>
                         <h1 className={styles.project__name}>
-                          Covid Information
+                          {sortedProjects[1].title.rendered}
                         </h1>
                         <h3 className={styles.project__desc}>
-                          A website that details basic information about
-                          covid-19. contains data visualisations built with
-                          d3.js
+                          {sortedProjects[1].acf.excerpt}
                         </h3>
                       </div>
                       <Image
-                        src="/images/projects/Covid Information.PNG"
+                        src={sortedProjects[1].acf.imageUrl}
                         width="300"
                         height="100"
                         alt="placeholder for image"
@@ -102,7 +114,7 @@ const Projects = () => {
             console.log(inView);
             return (
               <a
-                href="https://itsjustdaniel.github.io/interactive-comment-section/"
+                href={sortedProjects[2].acf.project_link.url}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -118,7 +130,7 @@ const Projects = () => {
 
                   <div className={styles.project__content}>
                     <Image
-                      src="/images/projects/interactive-comment-section.png"
+                      src={sortedProjects[2].acf.imageUrl}
                       width="300"
                       height="100"
                       alt="image for jeopardy site"
@@ -126,11 +138,10 @@ const Projects = () => {
                     />
                     <div className={styles.project__info}>
                       <h1 className={styles.project__name}>
-                        Interactive Comment Section
+                        {sortedProjects[2].title.rendered}
                       </h1>
                       <h3 className={styles.project__desc}>
-                        Interactive comment section. challenge by frontend
-                        mentors
+                        {sortedProjects[2].acf.excerpt}
                       </h3>
                     </div>
                   </div>
