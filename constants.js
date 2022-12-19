@@ -1,4 +1,4 @@
-let cmsAPI = "http://daniell409.sg-host.com/";
+let cmsAPI = "https://daniell409.sg-host.com/";
 
 if (process.env.NODE_ENV) {
   cmsAPI = "http://personal-blog.local/";
