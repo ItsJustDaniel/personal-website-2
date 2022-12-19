@@ -52,7 +52,6 @@ export async function getStaticPaths() {
   for (let i = 0; i < posts.length; i++) {
     paths.push({ params: { id: posts[i].id.toString() } });
   }
-  console.log(paths);
 
   return {
     paths,

@@ -17,7 +17,6 @@ const Projects = (projects) => {
     })
   );
 
-  console.log(sortedProjects);
   return (
     <div className={styles.projects__container}>
       <h1 className={styles.projects__title}>Projects</h1>
@@ -26,7 +25,6 @@ const Projects = (projects) => {
         {/* project 1 */}
         <InView>
           {({ ref, inView }) => {
-            console.log(inView);
             return (
               <a
                 href={sortedProjects[0].acf.project_link.url}
@@ -111,7 +109,6 @@ const Projects = (projects) => {
         {/* project 3 */}
         <InView>
           {({ ref, inView }) => {
-            console.log(inView);
             return (
               <a
                 href={sortedProjects[2].acf.project_link.url}

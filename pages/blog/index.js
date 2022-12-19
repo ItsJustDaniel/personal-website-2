@@ -7,7 +7,6 @@ import { sortByDate } from "/utils";
 import cmsAPI from "../../constants";
 
 const Blog = ({ posts }) => {
-  console.log(posts);
   return (
     <div>
       <Head>
@@ -35,12 +34,10 @@ export async function getStaticProps() {
 
   for (let i = 0; i < posts.length; i++) {
     posts[i].acf.thumbnail;
-    console.log(posts[i].acf.thumbnail);
     const res = await fetch(
       `${cmsAPI}wp-json/wp/v2/media/${posts[i].acf.thumbnail}`
     );
     const data = await res.json();
-    console.log(data);
     posts[i].acf.imageUrl = data.media_details.sizes.full.source_url;
   }
 

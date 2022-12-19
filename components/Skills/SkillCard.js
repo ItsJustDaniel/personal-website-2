@@ -7,11 +7,8 @@ let list = [1, 2, 3, 4, 5, 6, 7, 8];
 
 const random = (list, setLoading) => {
   const rand = Math.floor(Math.random() * list.length);
-  console.log(rand);
-  console.log(list);
 
   const listNum = list.splice(rand, 1);
-  console.log(listNum);
 
   setTimeout(() => {
     setLoading(false);
