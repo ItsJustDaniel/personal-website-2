@@ -6,7 +6,7 @@ const Admin = () => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     redirect: {
       destination: "https://daniell409.sg-host.com/wp-admin/",
