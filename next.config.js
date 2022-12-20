@@ -1,6 +1,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["personal-blog.local"],
+    domains: ["personal-bog.local", "daniell409.sg-host.com"],
   },
 };

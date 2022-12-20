@@ -42,6 +42,7 @@ export default function Home({ projectsData }) {
 export async function getStaticProps() {
   const res = await fetch(`${cmsAPI}wp-json/wp/v2/project`);
   let projectsData = await res.json();
+  console.log(projectsData);
 
   if (!projectsData) {
     return {

@@ -6,6 +6,8 @@ import styles from "/styles/project.module.css";
 import { useState } from "react";
 
 const Projects = (projects) => {
+  console.log(projects);
+
   const [sortedProjects] = useState(
     projects.projects.sort((a, b) => {
       if (a.acf.piority > b.acf.piority) {
