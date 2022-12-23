@@ -21,7 +21,7 @@ const Blog = ({ posts }) => {
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch(`${cmsAPI}wp-json/wp/v2/posts`);
   const posts = await res.json();
   let thumbnails = [];
