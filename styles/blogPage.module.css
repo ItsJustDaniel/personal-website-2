@@ -1,3 +1,7 @@
+.title {
+  font-size: 3rem;
+}
+
 .card {
   width: clamp(300px, 80vw, 1200px);
   background-color: #252d3e;
@@ -16,7 +20,7 @@
 }
 
 .text {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .image__container {
