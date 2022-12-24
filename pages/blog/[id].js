@@ -20,7 +20,10 @@ const BlogPage = ({ post }) => {
           <FontAwesomeIcon icon={faLongArrowAltLeft} className={styles.back} />
         </Link>
         <div>
-          <h1 className={styles.title}>{post.title.rendered}</h1>
+          <h1
+            className={styles.title}
+            dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+          ></h1>
 
           <h6>{post.acf.date}</h6>
           <div className={styles.image__container}>
@@ -29,7 +32,7 @@ const BlogPage = ({ post }) => {
               alt=""
               width={700}
               height={500}
-              class={styles.image}
+              className={styles.image}
             />
           </div>
           <div>

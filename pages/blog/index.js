@@ -12,10 +12,13 @@ const Blog = ({ posts }) => {
       <Head>
         <title>Dev Blog</title>
       </Head>
-      <div className={styles.posts}>
-        {posts.map((post, index) => {
-          return <Post post={post} key={index} />;
-        })}
+      <div className={styles.blogContainer}>
+        <h1 className={styles.blogTitle}>Blog</h1>
+        <div className={styles.posts}>
+          {posts.map((post, index) => {
+            return <Post post={post} key={index} />;
+          })}
+        </div>
       </div>
     </div>
   );

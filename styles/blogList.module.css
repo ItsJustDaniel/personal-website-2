@@ -1,12 +1,17 @@
+.blogTitle {
+  text-align: center;
+  font-size: 3rem;
+}
+
 .posts {
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(clamp(300px, 30vw, 400px), 1fr)
+    minmax(clamp(300px, 25vw, 400px), 1fr)
   );
   gap: 2rem;
   margin: 30px auto;
-  width: clamp(300px, 90%, 1200px);
+  width: clamp(300px, 90%, 1000px);
 }
 
 .card {
@@ -31,7 +36,6 @@
   opacity: 90%;
   width: 100%;
   padding: 1rem;
-  max-height: 50%;
 }
 
 .post__date {
