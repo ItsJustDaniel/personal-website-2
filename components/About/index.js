@@ -18,16 +18,24 @@ const About = () => {
             >
               <div className={styles.about__info}>
                 <p>
-                  Hello, my name is Daniel Li. Ever since I was a teenager I’ve
-                  been passionate about programming. I love building projects
-                  and seeing my vision come to life. I want to be able turn this
-                  passion into something I can do for the rest of my life.
+                  Hi there! My name is Daniel Li and I am a Frontend Web
+                  Developer.
                 </p>
                 <p>
-                  I’m a frontend devloper, but I know backend stuff as well. I
-                  have a strong understanding of HTML, CSS, Javascript, PHP and
-                  React. I am highly passionate about learning and love learning
-                  about new tools as well as building on my fundalmentals.
+                  I have always been passionate about web development and have
+                  dedicated myself to constantly learning and growing in this
+                  field. Over the years, I have gained a wealth of knowledge and
+                  experience through my projects.
+                </p>
+                <p>
+                  {" "}
+                  I do freelance work as well. On my free time, I enjoy making
+                  blogs on programming as well as making personal projects.
+                </p>
+                <p>
+                  Thank you for visiting my website. I hope you find the
+                  information here helpful and look forward to connecting with
+                  you.
                 </p>
               </div>
             </div>
