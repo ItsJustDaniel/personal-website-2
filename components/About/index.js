@@ -18,24 +18,21 @@ const About = () => {
             >
               <div className={styles.about__info}>
                 <p>
-                  Hi there! My name is Daniel Li and I am a Frontend Web
-                  Developer.
+                  Hello, my name is Daniel Li and I am a Frontend Web Developer.
                 </p>
                 <p>
-                  I have always been passionate about web development and have
-                  dedicated myself to constantly learning and growing in this
-                  field. Over the years, I have gained a wealth of knowledge and
+                  I am passionate about web development and have dedicated
+                  myself to constantly learning and growing in this field. Over
+                  the past 2 years, I have gained a wealth of knowledge and
                   experience through my projects.
                 </p>
                 <p>
-                  {" "}
-                  I do freelance work as well. On my free time, I enjoy making
-                  blogs on programming as well as making personal projects.
+                  On my free time, I enjoy making blogs on programming as well
+                  as making personal projects.
                 </p>
                 <p>
-                  Thank you for visiting my website. I hope you find the
-                  information here helpful and look forward to connecting with
-                  you.
+                  Thanks for visiting my website. I hope you enjoy your time
+                  here!
                 </p>
               </div>
             </div>
